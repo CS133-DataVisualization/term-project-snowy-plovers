@@ -9,11 +9,11 @@ This folder contains the interactive geomap component of our project. The map wa
   Does not require Python or the dataset to view.
 
 - Interactive_Geomap.ipynb  
-  Jupyter Notebook used to generate the geomap. Requires the cleaned dataset ( in the data foldeer of our project).
+  Jupyter Notebook used to generate the geomap. Requires the cleaned dataset ( in the data folder of our project).
 
 ## Dataset Requirement (for running the notebook)
 
-To run the notebook and regenerate the map, ensure the following file is available:
+To run the notebook and regenerate the map, download the following csv: 
 
 data/cleaned_plover_dataset.csv
 
