@@ -57,7 +57,7 @@ Create the environment:
 python -m venv plover-env
 
 
-Activate the environment:
+#### Activate the environment:
 
 macOS / Linux:
 source plover-env/bin/activate
@@ -66,6 +66,6 @@ source plover-env/bin/activate
 Windows (PowerShell):
 plover-env\Scripts\Activate.ps1
 
-Install the required packages:
+#### Install the required packages:
 
 pip install pandas numpy seaborn matplotlib scikit-learn folium plotly jupyter
