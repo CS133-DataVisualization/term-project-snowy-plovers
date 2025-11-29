@@ -36,7 +36,9 @@ You may use either **conda** or **venv**.
 If you have Anaconda or Miniconda installed, run the following in your terminal:
 
 conda create -n plover-env python=3.10 -y
+
 conda activate plover-env
+
 pip install folium pandas numpy jupyter
 
 ---
