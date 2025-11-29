@@ -26,17 +26,39 @@ Update the path inside the notebook if your dataset is stored elsewhere.
 
 ## Environment Setup
 
-Create a Python environment and install required libraries.
+To run the interactive dashboard notebook, you need a Python environment with a few required libraries.
+You may use either **conda** or **venv**.
+
+---
 
 ### Using conda
+
+If you have Anaconda or Miniconda installed, run the following in your terminal:
+
 conda create -n plover-env python=3.10 -y
 conda activate plover-env
 pip install folium pandas numpy jupyter
 
-### Using venv
+---
+
+### Using venv (standard Python)
+
+If you do not use conda, you can create a virtual environment with `venv`:
+
+Create the environment:
+
 python -m venv plover-env
-source plover-env/bin/activate      # macOS/Linux
-plover-env\Scripts\activate         # Windows
+
+Activate the environment:
+
+macOS / Linux:  
+source plover-env/bin/activate
+
+Windows (PowerShell):  
+plover-env\Scripts\Activate.ps1
+
+Install required packages:
+
 pip install folium pandas numpy jupyter
 
 ## Running the Notebook
