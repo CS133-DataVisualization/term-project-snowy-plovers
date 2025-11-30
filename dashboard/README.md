@@ -24,44 +24,42 @@ The notebook expects a path such as (add to Google Drive):
 
 Update the path inside the notebook if your dataset is stored elsewhere.
 
-## Environment Setup
+## Rebuilding the Map Using the Notebook (Optional)
 
-To run the interactive dashboard notebook, you need a Python environment with a few required libraries.
-You may use either **conda** or **venv**.
+You can regenerate or modify the geomap by running the Jupyter notebook included in this folder.
 
----
+### Option 1: Google Colab (recommended)
 
-### Using conda
+1. Upload `Interactive_Geomap.ipynb` to Google Colab.
+2. Upload `data/cleaned_plover_dataset.csv` to the Colab environment.
+3. Update the file path in the notebook if necessary, for example:
 
-If you have Anaconda or Miniconda installed, run the following in your terminal:
+   ```python
+   df = pd.read_csv("cleaned_plover_dataset.csv")
+   
+4. Run all cells in order.
+5. Save the map as an HTML file:
+   plover_map.save("plover_map.html")
 
-conda create -n plover-env python=3.10 -y
+### Option 2: Local Jupyter Notebook
 
-conda activate plover-env
+1. Step 1 – Install dependencies
 
-pip install folium pandas numpy jupyter
+   pip install folium pandas numpy jupyter
 
----
+2. Step 2 – Launch Jupyter
+   jupyter notebook
 
-### Using venv (standard Python)
+3. Step 3 – Run the notebook
 
-If you do not use conda, you can create a virtual environment with `venv`:
+   Open Interactive_Geomap.ipynb.
 
-Create the environment:
+    Place cleaned_plover_dataset.csv in the same folder as the notebook (or update the path inside the notebook).
 
-python -m venv plover-env
+    Run all cells to generate the map.
 
-Activate the environment:
+    A new plover_map.html file will be created in the current directory.
 
-macOS / Linux:  
-source plover-env/bin/activate
-
-Windows (PowerShell):  
-plover-env\Scripts\Activate.ps1
-
-Install required packages:
-
-pip install folium pandas numpy jupyter
 
 ## Running the Notebook
 
