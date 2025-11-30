@@ -76,3 +76,5 @@ Place the following file in the /data/ folder:
 
 If using Google Colab, update the dataset path inside each notebook.
 
+“For instructions on running the interactive geomap, see /dashboard/README.md.”
+
