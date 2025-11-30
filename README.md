@@ -36,36 +36,43 @@ These are **not** used in the final pipeline but are included for reference.
 
 ## How to Run the Project
 
-To run the notebooks (EDA or ML), you must set up a Python environment and install required libraries.
+### 1. Requirements
 
-### Environment Setup
+Before running any notebooks, install Python (3.9–3.11 recommended) and install the required packages:
 
-You can use either conda or venv.
+`bash
+pip install pandas numpy matplotlib seaborn scikit-learn folium jupyter `
 
-#### Using conda:
-conda create -n plover-env python=3.10 -y
+### You can also use conda 
 
+`conda create -n plover-env python=3.10 -y
 conda activate plover-env
+pip install pandas numpy seaborn matplotlib scikit-learn folium plotly jupyter`
 
-pip install pandas numpy seaborn matplotlib scikit-learn folium plotly jupyter
+### 2. Running the Jupyter Notebooks
+Step 1 - Launch Jupyter Notebook 
+`jupyter notebook
+`
+
+Step 2 — Open the notebooks in the /code/ folder:
+
+Initial_Models_And_Data_Preprocessing.ipynb
+  - Merges the datasets
+  - Cleans missing values
+  - Creates engineered features
+  - Saves the cleaned dataset as cleaned_plover_dataset.csv
+
+ML_Models.ipynb
+- Loads the cleaned dataset
+- Performs EDA visualizations
+- Trains Logistic Regression, Decision Tree, and Random Forest
+- Displays metrics, confusion matrices, ROC curves, and feature importances
+
+Dataset location
+
+Place the following file in the /data/ folder:
+`data/cleaned_plover_dataset.csv`
 
 
-#### Using venv (standard Python)
+If using Google Colab, update the dataset path inside each notebook.
 
-Create the environment:
-
-python -m venv plover-env
-
-
-#### Activate the environment:
-
-macOS / Linux:
-source plover-env/bin/activate
-
-
-Windows (PowerShell):
-plover-env\Scripts\Activate.ps1
-
-#### Install the required packages:
-
-pip install pandas numpy seaborn matplotlib scikit-learn folium plotly jupyter
