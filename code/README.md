@@ -4,7 +4,7 @@ This folder contains all Python notebooks used for data preparation, merging dat
 
 ---
 
-### **1. `Data_Merging_and_Cleaning.ipynb`**
+### **1. `ML_Dataset_Preprocessing.ipynb`**
 - Merges all raw datasets from the Data.gov Snowy Plover Monitoring collection  
 - Handles missing values, inconsistent text fields, and duplicate entries  
 - Generates engineered features (`Month`, `DayOfYear`, `Total_SNPL`, etc.)  
